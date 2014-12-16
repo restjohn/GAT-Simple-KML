@@ -1,6 +1,0 @@
-[submodule "vendor/TouchXML"]
-	path = vendor/TouchXML
-	url = https://github.com/TouchCode/TouchXML
-[submodule "vendor/objective-zip"]
-	path = vendor/objective-zip
-	url = https://github.com/flyingdolphinstudio/Objective-Zip.git
