@@ -1,5 +1,5 @@
 #include "Pods-Tests-GAT-Simple-KML.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public/Specta"
-OTHER_LDFLAGS = -ObjC
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/TouchXML" "${PODS_ROOT}/Headers/Public/objective-zip" ${PODS_TESTS_GAT_SIMPLE_KML_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = ${PODS_TESTS_GAT_SIMPLE_KML_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}

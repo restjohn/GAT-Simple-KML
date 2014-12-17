@@ -9,13 +9,13 @@
 
 Pod::Spec.new do |s|
   s.name             = "GAT-Simple-KML"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "A fork of MapBox's Simple-KML library"
   s.description      = <<-DESC
-                       An optional longer description of GAT-Simple-KML
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Initially, this fork will serve to update the objective-zip
+                       dependency.  Later, I hope to add support for streamed KML
+                       parsing in order to minimize the memory footprint for large
+                       KML trees.
                        DESC
   s.homepage         = "https://github.com/restjohn/GAT-Simple-KML"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = true
 
-  s.source_files = 'source'
+  s.source_files = 'source/*.{m,h}'
 
   s.libraries = 'xml2'
-  s.xcconfig = 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2"
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
   s.dependency 'objective-zip', '0.8.3'
   s.dependency 'TouchXML'

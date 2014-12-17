@@ -24,3 +24,15 @@
 #define COCOAPODS_VERSION_MINOR_Specta 2
 #define COCOAPODS_VERSION_PATCH_Specta 1
 
+// TouchXML
+#define COCOAPODS_POD_AVAILABLE_TouchXML
+#define COCOAPODS_VERSION_MAJOR_TouchXML 0
+#define COCOAPODS_VERSION_MINOR_TouchXML 1
+#define COCOAPODS_VERSION_PATCH_TouchXML 0
+
+// objective-zip
+#define COCOAPODS_POD_AVAILABLE_objective_zip
+#define COCOAPODS_VERSION_MAJOR_objective_zip 0
+#define COCOAPODS_VERSION_MINOR_objective_zip 8
+#define COCOAPODS_VERSION_PATCH_objective_zip 3
+

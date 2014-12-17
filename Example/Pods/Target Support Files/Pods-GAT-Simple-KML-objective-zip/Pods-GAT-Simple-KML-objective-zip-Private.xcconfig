@@ -1,0 +1,5 @@
+#include "Pods-GAT-Simple-KML-objective-zip.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/objective-zip" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/TouchXML" "${PODS_ROOT}/Headers/Public/objective-zip"
+OTHER_LDFLAGS = ${PODS_GAT_SIMPLE_KML_OBJECTIVE_ZIP_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

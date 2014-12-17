@@ -1,7 +1,7 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks" "$(PLATFORM_DIR)/Developer/Library/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public/Specta"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Expecta" -isystem "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" -isystem "${PODS_ROOT}/Headers/Public/Specta"
-OTHER_LDFLAGS = -ObjC -l"Pods-Tests-Expecta" -l"Pods-Tests-GAT-Simple-KML" -l"Pods-Tests-Specta" -framework "Foundation" -framework "XCTest"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/TouchXML" "${PODS_ROOT}/Headers/Public/objective-zip" $(SDKROOT)/usr/include/libxml2
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Expecta" -isystem "${PODS_ROOT}/Headers/Public/GAT-Simple-KML" -isystem "${PODS_ROOT}/Headers/Public/Specta" -isystem "${PODS_ROOT}/Headers/Public/TouchXML" -isystem "${PODS_ROOT}/Headers/Public/objective-zip"
+OTHER_LDFLAGS = -ObjC -l"Pods-Tests-Expecta" -l"Pods-Tests-GAT-Simple-KML" -l"Pods-Tests-Specta" -l"Pods-Tests-TouchXML" -l"Pods-Tests-objective-zip" -l"xml2" -l"z" -framework "Foundation" -framework "XCTest"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

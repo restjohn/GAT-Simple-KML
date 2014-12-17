@@ -264,11 +264,11 @@
         return nil;
     }
     
-    FileInZipInfo *info = [archive getCurrentFileInZipInfo];
-    
     ZipReadStream *stream = [archive readCurrentFileInZip];
     
-    NSData *data = [stream readDataOfLength:info.length];
+    NSMutableData *data = [NSMutableData dataWithCapacity:(1 << 14)];
+    
+    [stream readDataWithBuffer:data];
     
     [stream finishedReading];
     

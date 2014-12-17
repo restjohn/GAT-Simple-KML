@@ -1,7 +1,11 @@
 PODS:
   - Expecta (0.3.1)
-  - GAT-Simple-KML (0.1.0)
+  - GAT-Simple-KML (0.1.0):
+    - objective-zip (= 0.8.3)
+    - TouchXML
+  - objective-zip (0.8.3)
   - Specta (0.2.1)
+  - TouchXML (0.1)
 
 DEPENDENCIES:
   - Expecta
@@ -14,7 +18,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  GAT-Simple-KML: d5b98f69c4138c8bbdff492ae3f723228c0cdf45
+  GAT-Simple-KML: 9a39b29ba35ba9552cb777751de34a443d271621
+  objective-zip: 5d3c6d7c5f9f7638c840c011e9e33485b5caa43c
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  TouchXML: fa552bd1f8b98cb5233be61622655796765fe535
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0
